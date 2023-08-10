@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    // 자바 스크립트는 단일 쓰레드다!
+    // 하나의 친구만 일을 맡아서 하기에 다른 일을 동시다발적으로 하지 못한다
+    // 이를 비 동기적이다고 한다.
+    // 
+    
+    <script>
+        setTimeout(() => {
+            console.log("실행1");
+        }, 5000); //  5초 있다가
+
+        setTimeout(() => {
+            console.log("실행2");
+        }, 5000); // 5초 있다가 
+    </script>
+</body>
+</html>
